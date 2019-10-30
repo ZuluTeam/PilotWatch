@@ -1,0 +1,960 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5215F1523699B5C00CE55C7 /* FlightTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215F1423699B5C00CE55C7 /* FlightTimeController.swift */; };
+		B5215F1723699EED00CE55C7 /* FlightTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215F1623699EED00CE55C7 /* FlightTimeView.swift */; };
+		B57079662362005D008A95F6 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57079652362005D008A95F6 /* TimeModel.swift */; };
+		B57079672362005D008A95F6 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57079652362005D008A95F6 /* TimeModel.swift */; };
+		B570796923632B80008A95F6 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570796823632B80008A95F6 /* IntExtensions.swift */; };
+		B570796A23632B80008A95F6 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570796823632B80008A95F6 /* IntExtensions.swift */; };
+		B570796D23632C05008A95F6 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570796B23632C05008A95F6 /* TimeView.swift */; };
+		B570796F23632CDF008A95F6 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570796E23632CDF008A95F6 /* DateManager.swift */; };
+		B570797023632CE0008A95F6 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570796E23632CDF008A95F6 /* DateManager.swift */; };
+		B570797423670D89008A95F6 /* TimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570797323670D89008A95F6 /* TimeController.swift */; };
+		B5DC8A2522F1AC7700F8FB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A2422F1AC7700F8FB12 /* AppDelegate.swift */; };
+		B5DC8A2722F1AC7700F8FB12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A2622F1AC7700F8FB12 /* ContentView.swift */; };
+		B5DC8A2922F1AC7900F8FB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DC8A2822F1AC7900F8FB12 /* Assets.xcassets */; };
+		B5DC8A2C22F1AC7900F8FB12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DC8A2B22F1AC7900F8FB12 /* Preview Assets.xcassets */; };
+		B5DC8A2F22F1AC7900F8FB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DC8A2D22F1AC7900F8FB12 /* LaunchScreen.storyboard */; };
+		B5DC8A3A22F1AC7900F8FB12 /* PilotWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A3922F1AC7900F8FB12 /* PilotWatchTests.swift */; };
+		B5DC8A4522F1AC7900F8FB12 /* PilotWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A4422F1AC7900F8FB12 /* PilotWatchUITests.swift */; };
+		B5DC8A4A22F1AC7900F8FB12 /* PilotWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B5DC8A4922F1AC7900F8FB12 /* PilotWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B5DC8A5022F1AC7900F8FB12 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DC8A4E22F1AC7900F8FB12 /* Interface.storyboard */; };
+		B5DC8A5222F1AC7A00F8FB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DC8A5122F1AC7A00F8FB12 /* Assets.xcassets */; };
+		B5DC8A5922F1AC7A00F8FB12 /* PilotWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B5DC8A5822F1AC7A00F8FB12 /* PilotWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B5DC8A5E22F1AC7A00F8FB12 /* EnduranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A5D22F1AC7A00F8FB12 /* EnduranceView.swift */; };
+		B5DC8A6022F1AC7A00F8FB12 /* EnduranceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A5F22F1AC7A00F8FB12 /* EnduranceController.swift */; };
+		B5DC8A6222F1AC7A00F8FB12 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A6122F1AC7A00F8FB12 /* ExtensionDelegate.swift */; };
+		B5DC8A6422F1AC7A00F8FB12 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A6322F1AC7A00F8FB12 /* NotificationController.swift */; };
+		B5DC8A6622F1AC7A00F8FB12 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A6522F1AC7A00F8FB12 /* NotificationView.swift */; };
+		B5DC8A6822F1AC7A00F8FB12 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A6722F1AC7A00F8FB12 /* ComplicationController.swift */; };
+		B5DC8A6A22F1AC7A00F8FB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DC8A6922F1AC7A00F8FB12 /* Assets.xcassets */; };
+		B5DC8A6D22F1AC7A00F8FB12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DC8A6C22F1AC7A00F8FB12 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5DC8A3622F1AC7900F8FB12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5DC8A1922F1AC7700F8FB12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5DC8A2022F1AC7700F8FB12;
+			remoteInfo = PilotWatch;
+		};
+		B5DC8A4122F1AC7900F8FB12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5DC8A1922F1AC7700F8FB12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5DC8A2022F1AC7700F8FB12;
+			remoteInfo = PilotWatch;
+		};
+		B5DC8A4B22F1AC7900F8FB12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5DC8A1922F1AC7700F8FB12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5DC8A4822F1AC7900F8FB12;
+			remoteInfo = "PilotWatch WatchKit App";
+		};
+		B5DC8A5A22F1AC7A00F8FB12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5DC8A1922F1AC7700F8FB12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5DC8A5722F1AC7A00F8FB12;
+			remoteInfo = "PilotWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5DC8A7522F1AC7A00F8FB12 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B5DC8A5922F1AC7A00F8FB12 /* PilotWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DC8A7922F1AC7A00F8FB12 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B5DC8A4A22F1AC7900F8FB12 /* PilotWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B5215F1423699B5C00CE55C7 /* FlightTimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTimeController.swift; sourceTree = "<group>"; };
+		B5215F1623699EED00CE55C7 /* FlightTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTimeView.swift; sourceTree = "<group>"; };
+		B57079652362005D008A95F6 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		B570796823632B80008A95F6 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		B570796B23632C05008A95F6 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		B570796E23632CDF008A95F6 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		B570797323670D89008A95F6 /* TimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeController.swift; sourceTree = "<group>"; };
+		B5DC8A2122F1AC7700F8FB12 /* PilotWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DC8A2422F1AC7700F8FB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5DC8A2622F1AC7700F8FB12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5DC8A2822F1AC7900F8FB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5DC8A2B22F1AC7900F8FB12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5DC8A2E22F1AC7900F8FB12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5DC8A3022F1AC7900F8FB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5DC8A3522F1AC7900F8FB12 /* PilotWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PilotWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DC8A3922F1AC7900F8FB12 /* PilotWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotWatchTests.swift; sourceTree = "<group>"; };
+		B5DC8A3B22F1AC7900F8FB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5DC8A4022F1AC7900F8FB12 /* PilotWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PilotWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DC8A4422F1AC7900F8FB12 /* PilotWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotWatchUITests.swift; sourceTree = "<group>"; };
+		B5DC8A4622F1AC7900F8FB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5DC8A4922F1AC7900F8FB12 /* PilotWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PilotWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DC8A4F22F1AC7900F8FB12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B5DC8A5122F1AC7A00F8FB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5DC8A5322F1AC7A00F8FB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5DC8A5822F1AC7A00F8FB12 /* PilotWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PilotWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DC8A5D22F1AC7A00F8FB12 /* EnduranceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnduranceView.swift; sourceTree = "<group>"; };
+		B5DC8A5F22F1AC7A00F8FB12 /* EnduranceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnduranceController.swift; sourceTree = "<group>"; };
+		B5DC8A6122F1AC7A00F8FB12 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B5DC8A6322F1AC7A00F8FB12 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B5DC8A6522F1AC7A00F8FB12 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		B5DC8A6722F1AC7A00F8FB12 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B5DC8A6922F1AC7A00F8FB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5DC8A6C22F1AC7A00F8FB12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5DC8A6E22F1AC7A00F8FB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5DC8A6F22F1AC7A00F8FB12 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5DC8A1E22F1AC7700F8FB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DC8A3222F1AC7900F8FB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DC8A3D22F1AC7900F8FB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DC8A5522F1AC7A00F8FB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5215F122369955A00CE55C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC8A5D22F1AC7A00F8FB12 /* EnduranceView.swift */,
+				B5215F1623699EED00CE55C7 /* FlightTimeView.swift */,
+				B570796B23632C05008A95F6 /* TimeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5215F132369957A00CE55C7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC8A5F22F1AC7A00F8FB12 /* EnduranceController.swift */,
+				B5215F1423699B5C00CE55C7 /* FlightTimeController.swift */,
+				B570797323670D89008A95F6 /* TimeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B57079642362004C008A95F6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B57079652362005D008A95F6 /* TimeModel.swift */,
+				B570796823632B80008A95F6 /* IntExtensions.swift */,
+				B570796E23632CDF008A95F6 /* DateManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B5DC8A1822F1AC7700F8FB12 = {
+			isa = PBXGroup;
+			children = (
+				B57079642362004C008A95F6 /* Shared */,
+				B5DC8A2322F1AC7700F8FB12 /* PilotWatch */,
+				B5DC8A3822F1AC7900F8FB12 /* PilotWatchTests */,
+				B5DC8A4322F1AC7900F8FB12 /* PilotWatchUITests */,
+				B5DC8A4D22F1AC7900F8FB12 /* PilotWatch WatchKit App */,
+				B5DC8A5C22F1AC7A00F8FB12 /* PilotWatch WatchKit Extension */,
+				B5DC8A2222F1AC7700F8FB12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5DC8A2222F1AC7700F8FB12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC8A2122F1AC7700F8FB12 /* PilotWatch.app */,
+				B5DC8A3522F1AC7900F8FB12 /* PilotWatchTests.xctest */,
+				B5DC8A4022F1AC7900F8FB12 /* PilotWatchUITests.xctest */,
+				B5DC8A4922F1AC7900F8FB12 /* PilotWatch WatchKit App.app */,
+				B5DC8A5822F1AC7A00F8FB12 /* PilotWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5DC8A2322F1AC7700F8FB12 /* PilotWatch */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC8A2422F1AC7700F8FB12 /* AppDelegate.swift */,
+				B5DC8A2622F1AC7700F8FB12 /* ContentView.swift */,
+				B5DC8A2822F1AC7900F8FB12 /* Assets.xcassets */,
+				B5DC8A2D22F1AC7900F8FB12 /* LaunchScreen.storyboard */,
+				B5DC8A3022F1AC7900F8FB12 /* Info.plist */,
+				B5DC8A2A22F1AC7900F8FB12 /* Preview Content */,
+			);
+			path = PilotWatch;
+			sourceTree = "<group>";
+		};
+		B5DC8A2A22F1AC7900F8FB12 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC8A2B22F1AC7900F8FB12 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5DC8A3822F1AC7900F8FB12 /* PilotWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC8A3922F1AC7900F8FB12 /* PilotWatchTests.swift */,
+				B5DC8A3B22F1AC7900F8FB12 /* Info.plist */,
+			);
+			path = PilotWatchTests;
+			sourceTree = "<group>";
+		};
+		B5DC8A4322F1AC7900F8FB12 /* PilotWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC8A4422F1AC7900F8FB12 /* PilotWatchUITests.swift */,
+				B5DC8A4622F1AC7900F8FB12 /* Info.plist */,
+			);
+			path = PilotWatchUITests;
+			sourceTree = "<group>";
+		};
+		B5DC8A4D22F1AC7900F8FB12 /* PilotWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC8A4E22F1AC7900F8FB12 /* Interface.storyboard */,
+				B5DC8A5122F1AC7A00F8FB12 /* Assets.xcassets */,
+				B5DC8A5322F1AC7A00F8FB12 /* Info.plist */,
+			);
+			path = "PilotWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		B5DC8A5C22F1AC7A00F8FB12 /* PilotWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5215F132369957A00CE55C7 /* Controllers */,
+				B5215F122369955A00CE55C7 /* Views */,
+				B5DC8A6122F1AC7A00F8FB12 /* ExtensionDelegate.swift */,
+				B5DC8A6322F1AC7A00F8FB12 /* NotificationController.swift */,
+				B5DC8A6522F1AC7A00F8FB12 /* NotificationView.swift */,
+				B5DC8A6722F1AC7A00F8FB12 /* ComplicationController.swift */,
+				B5DC8A6922F1AC7A00F8FB12 /* Assets.xcassets */,
+				B5DC8A6E22F1AC7A00F8FB12 /* Info.plist */,
+				B5DC8A6F22F1AC7A00F8FB12 /* PushNotificationPayload.apns */,
+				B5DC8A6B22F1AC7A00F8FB12 /* Preview Content */,
+			);
+			path = "PilotWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B5DC8A6B22F1AC7A00F8FB12 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC8A6C22F1AC7A00F8FB12 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5DC8A2022F1AC7700F8FB12 /* PilotWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5DC8A7A22F1AC7A00F8FB12 /* Build configuration list for PBXNativeTarget "PilotWatch" */;
+			buildPhases = (
+				B5DC8A1D22F1AC7700F8FB12 /* Sources */,
+				B5DC8A1E22F1AC7700F8FB12 /* Frameworks */,
+				B5DC8A1F22F1AC7700F8FB12 /* Resources */,
+				B5DC8A7922F1AC7A00F8FB12 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5DC8A4C22F1AC7900F8FB12 /* PBXTargetDependency */,
+			);
+			name = PilotWatch;
+			productName = PilotWatch;
+			productReference = B5DC8A2122F1AC7700F8FB12 /* PilotWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5DC8A3422F1AC7900F8FB12 /* PilotWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5DC8A7D22F1AC7A00F8FB12 /* Build configuration list for PBXNativeTarget "PilotWatchTests" */;
+			buildPhases = (
+				B5DC8A3122F1AC7900F8FB12 /* Sources */,
+				B5DC8A3222F1AC7900F8FB12 /* Frameworks */,
+				B5DC8A3322F1AC7900F8FB12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5DC8A3722F1AC7900F8FB12 /* PBXTargetDependency */,
+			);
+			name = PilotWatchTests;
+			productName = PilotWatchTests;
+			productReference = B5DC8A3522F1AC7900F8FB12 /* PilotWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5DC8A3F22F1AC7900F8FB12 /* PilotWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5DC8A8022F1AC7A00F8FB12 /* Build configuration list for PBXNativeTarget "PilotWatchUITests" */;
+			buildPhases = (
+				B5DC8A3C22F1AC7900F8FB12 /* Sources */,
+				B5DC8A3D22F1AC7900F8FB12 /* Frameworks */,
+				B5DC8A3E22F1AC7900F8FB12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5DC8A4222F1AC7900F8FB12 /* PBXTargetDependency */,
+			);
+			name = PilotWatchUITests;
+			productName = PilotWatchUITests;
+			productReference = B5DC8A4022F1AC7900F8FB12 /* PilotWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B5DC8A4822F1AC7900F8FB12 /* PilotWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5DC8A7622F1AC7A00F8FB12 /* Build configuration list for PBXNativeTarget "PilotWatch WatchKit App" */;
+			buildPhases = (
+				B5DC8A4722F1AC7900F8FB12 /* Resources */,
+				B5DC8A7522F1AC7A00F8FB12 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5DC8A5B22F1AC7A00F8FB12 /* PBXTargetDependency */,
+			);
+			name = "PilotWatch WatchKit App";
+			productName = "PilotWatch WatchKit App";
+			productReference = B5DC8A4922F1AC7900F8FB12 /* PilotWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B5DC8A5722F1AC7A00F8FB12 /* PilotWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5DC8A7222F1AC7A00F8FB12 /* Build configuration list for PBXNativeTarget "PilotWatch WatchKit Extension" */;
+			buildPhases = (
+				B5DC8A5422F1AC7A00F8FB12 /* Sources */,
+				B5DC8A5522F1AC7A00F8FB12 /* Frameworks */,
+				B5DC8A5622F1AC7A00F8FB12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PilotWatch WatchKit Extension";
+			productName = "PilotWatch WatchKit Extension";
+			productReference = B5DC8A5822F1AC7A00F8FB12 /* PilotWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5DC8A1922F1AC7700F8FB12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Zuluteam;
+				TargetAttributes = {
+					B5DC8A2022F1AC7700F8FB12 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B5DC8A3422F1AC7900F8FB12 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B5DC8A2022F1AC7700F8FB12;
+					};
+					B5DC8A3F22F1AC7900F8FB12 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B5DC8A2022F1AC7700F8FB12;
+					};
+					B5DC8A4822F1AC7900F8FB12 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B5DC8A5722F1AC7A00F8FB12 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = B5DC8A1C22F1AC7700F8FB12 /* Build configuration list for PBXProject "PilotWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5DC8A1822F1AC7700F8FB12;
+			productRefGroup = B5DC8A2222F1AC7700F8FB12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5DC8A2022F1AC7700F8FB12 /* PilotWatch */,
+				B5DC8A3422F1AC7900F8FB12 /* PilotWatchTests */,
+				B5DC8A3F22F1AC7900F8FB12 /* PilotWatchUITests */,
+				B5DC8A4822F1AC7900F8FB12 /* PilotWatch WatchKit App */,
+				B5DC8A5722F1AC7A00F8FB12 /* PilotWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5DC8A1F22F1AC7700F8FB12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DC8A2F22F1AC7900F8FB12 /* LaunchScreen.storyboard in Resources */,
+				B5DC8A2C22F1AC7900F8FB12 /* Preview Assets.xcassets in Resources */,
+				B5DC8A2922F1AC7900F8FB12 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DC8A3322F1AC7900F8FB12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DC8A3E22F1AC7900F8FB12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DC8A4722F1AC7900F8FB12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DC8A5222F1AC7A00F8FB12 /* Assets.xcassets in Resources */,
+				B5DC8A5022F1AC7900F8FB12 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DC8A5622F1AC7A00F8FB12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DC8A6D22F1AC7A00F8FB12 /* Preview Assets.xcassets in Resources */,
+				B5DC8A6A22F1AC7A00F8FB12 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5DC8A1D22F1AC7700F8FB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DC8A2722F1AC7700F8FB12 /* ContentView.swift in Sources */,
+				B570796F23632CDF008A95F6 /* DateManager.swift in Sources */,
+				B570796923632B80008A95F6 /* IntExtensions.swift in Sources */,
+				B57079662362005D008A95F6 /* TimeModel.swift in Sources */,
+				B5DC8A2522F1AC7700F8FB12 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DC8A3122F1AC7900F8FB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DC8A3A22F1AC7900F8FB12 /* PilotWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DC8A3C22F1AC7900F8FB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DC8A4522F1AC7900F8FB12 /* PilotWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DC8A5422F1AC7A00F8FB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DC8A6022F1AC7A00F8FB12 /* EnduranceController.swift in Sources */,
+				B570797023632CE0008A95F6 /* DateManager.swift in Sources */,
+				B570796A23632B80008A95F6 /* IntExtensions.swift in Sources */,
+				B5DC8A5E22F1AC7A00F8FB12 /* EnduranceView.swift in Sources */,
+				B57079672362005D008A95F6 /* TimeModel.swift in Sources */,
+				B5DC8A6422F1AC7A00F8FB12 /* NotificationController.swift in Sources */,
+				B5215F1523699B5C00CE55C7 /* FlightTimeController.swift in Sources */,
+				B5215F1723699EED00CE55C7 /* FlightTimeView.swift in Sources */,
+				B570796D23632C05008A95F6 /* TimeView.swift in Sources */,
+				B5DC8A6222F1AC7A00F8FB12 /* ExtensionDelegate.swift in Sources */,
+				B5DC8A6622F1AC7A00F8FB12 /* NotificationView.swift in Sources */,
+				B5DC8A6822F1AC7A00F8FB12 /* ComplicationController.swift in Sources */,
+				B570797423670D89008A95F6 /* TimeController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5DC8A3722F1AC7900F8FB12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5DC8A2022F1AC7700F8FB12 /* PilotWatch */;
+			targetProxy = B5DC8A3622F1AC7900F8FB12 /* PBXContainerItemProxy */;
+		};
+		B5DC8A4222F1AC7900F8FB12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5DC8A2022F1AC7700F8FB12 /* PilotWatch */;
+			targetProxy = B5DC8A4122F1AC7900F8FB12 /* PBXContainerItemProxy */;
+		};
+		B5DC8A4C22F1AC7900F8FB12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5DC8A4822F1AC7900F8FB12 /* PilotWatch WatchKit App */;
+			targetProxy = B5DC8A4B22F1AC7900F8FB12 /* PBXContainerItemProxy */;
+		};
+		B5DC8A5B22F1AC7A00F8FB12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5DC8A5722F1AC7A00F8FB12 /* PilotWatch WatchKit Extension */;
+			targetProxy = B5DC8A5A22F1AC7A00F8FB12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5DC8A2D22F1AC7900F8FB12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5DC8A2E22F1AC7900F8FB12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B5DC8A4E22F1AC7900F8FB12 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5DC8A4F22F1AC7900F8FB12 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5DC8A7022F1AC7A00F8FB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5DC8A7122F1AC7A00F8FB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5DC8A7322F1AC7A00F8FB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PilotWatch WatchKit Extension\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = 2DMTV2NW38;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "PilotWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.zuluteam.PilotWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		B5DC8A7422F1AC7A00F8FB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PilotWatch WatchKit Extension\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = 2DMTV2NW38;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "PilotWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.zuluteam.PilotWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		B5DC8A7722F1AC7A00F8FB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DMTV2NW38;
+				IBSC_MODULE = PilotWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "PilotWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.zuluteam.PilotWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		B5DC8A7822F1AC7A00F8FB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DMTV2NW38;
+				IBSC_MODULE = PilotWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "PilotWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.zuluteam.PilotWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		B5DC8A7B22F1AC7A00F8FB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "PilotWatch/Preview\\ Content";
+				DEVELOPMENT_TEAM = 2DMTV2NW38;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PilotWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.zuluteam.PilotWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5DC8A7C22F1AC7A00F8FB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "PilotWatch/Preview\\ Content";
+				DEVELOPMENT_TEAM = 2DMTV2NW38;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PilotWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.zuluteam.PilotWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5DC8A7E22F1AC7A00F8FB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DMTV2NW38;
+				INFOPLIST_FILE = PilotWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.zuluteam.PilotWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PilotWatch.app/PilotWatch";
+			};
+			name = Debug;
+		};
+		B5DC8A7F22F1AC7A00F8FB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DMTV2NW38;
+				INFOPLIST_FILE = PilotWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.zuluteam.PilotWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PilotWatch.app/PilotWatch";
+			};
+			name = Release;
+		};
+		B5DC8A8122F1AC7A00F8FB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DMTV2NW38;
+				INFOPLIST_FILE = PilotWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.zuluteam.PilotWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PilotWatch;
+			};
+			name = Debug;
+		};
+		B5DC8A8222F1AC7A00F8FB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DMTV2NW38;
+				INFOPLIST_FILE = PilotWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.zuluteam.PilotWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PilotWatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5DC8A1C22F1AC7700F8FB12 /* Build configuration list for PBXProject "PilotWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5DC8A7022F1AC7A00F8FB12 /* Debug */,
+				B5DC8A7122F1AC7A00F8FB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5DC8A7222F1AC7A00F8FB12 /* Build configuration list for PBXNativeTarget "PilotWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5DC8A7322F1AC7A00F8FB12 /* Debug */,
+				B5DC8A7422F1AC7A00F8FB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5DC8A7622F1AC7A00F8FB12 /* Build configuration list for PBXNativeTarget "PilotWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5DC8A7722F1AC7A00F8FB12 /* Debug */,
+				B5DC8A7822F1AC7A00F8FB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5DC8A7A22F1AC7A00F8FB12 /* Build configuration list for PBXNativeTarget "PilotWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5DC8A7B22F1AC7A00F8FB12 /* Debug */,
+				B5DC8A7C22F1AC7A00F8FB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5DC8A7D22F1AC7A00F8FB12 /* Build configuration list for PBXNativeTarget "PilotWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5DC8A7E22F1AC7A00F8FB12 /* Debug */,
+				B5DC8A7F22F1AC7A00F8FB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5DC8A8022F1AC7A00F8FB12 /* Build configuration list for PBXNativeTarget "PilotWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5DC8A8122F1AC7A00F8FB12 /* Debug */,
+				B5DC8A8222F1AC7A00F8FB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5DC8A1922F1AC7700F8FB12 /* Project object */;
+}
