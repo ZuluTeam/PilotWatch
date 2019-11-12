@@ -14,10 +14,10 @@ final class TimeController : WKHostingController<TimeView> {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        guard let blockOffTime = context as? Date else {
+        guard let timeModel = context as? TimeModel else {
             fatalError("context is not a date")
         }
-        self.timeModel = TimeModel(blockOffTime: blockOffTime)
+        self.timeModel = timeModel
     }
     
     override var body: TimeView {

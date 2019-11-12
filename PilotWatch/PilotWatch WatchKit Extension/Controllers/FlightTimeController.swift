@@ -11,7 +11,17 @@ import WatchKit
 import SwiftUI
 
 final class FlightTimeController: WKHostingController<FlightTimeView> {
+    private var timeModel: TimeModel!
+    
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
+        guard let timeModel = context as? TimeModel else {
+            fatalError("context is not a date")
+        }
+        self.timeModel = timeModel
+    }
+    
     override var body: FlightTimeView {
-        return FlightTimeView()
+        return FlightTimeView(timeModel: timeModel)
     }
 }

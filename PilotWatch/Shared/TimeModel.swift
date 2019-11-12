@@ -14,6 +14,8 @@ final class TimeModel: ObservableObject {
     let objectWillChange = ObservableObjectPublisher()
     
     let blockOffTime: Date
+    let endurance: TimeInterval
+    
     var takeOffTime: Date? {
         willSet {
             objectWillChange.send()
@@ -32,7 +34,8 @@ final class TimeModel: ObservableObject {
     
     
     
-    init(blockOffTime: Date) {
+    init(blockOffTime: Date, endurance: TimeInterval) {
         self.blockOffTime = blockOffTime
+        self.endurance = endurance
     }
 }

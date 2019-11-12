@@ -15,7 +15,13 @@ final class EnduranceController : WKHostingController<EnduranceView> {
         return EnduranceView(host: self)
     }
     
-    func startTime(withBlockOffTime blockOffTime: Date) {
-        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [("TimeController", blockOffTime as AnyObject), ("FlightTimeController", "" as AnyObject)])
+    func startTime(withBlockOffTime blockOffTime: Date, endurance: TimeInterval) {
+        let timeModel = TimeModel(blockOffTime: blockOffTime, endurance: endurance)
+        UserDefaults.standard.set(endurance, forKey: UserDefaultsKeys.lastEndurance)
+        UserDefaults.standard.synchronize()
+        
+        WKInterfaceController.reloadRootControllers(
+            withNamesAndContexts: [("TimeController", timeModel),
+                                   ("FlightTimeController", timeModel)])
     }
 }

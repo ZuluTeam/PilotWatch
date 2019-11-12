@@ -37,12 +37,16 @@ struct EnduranceView : View {
                                 ForEach(0...EnduranceView.maxHourEndurance) {
                                     Text(String(format: "%02d", $0))
                                 }
-                            }.layoutPriority(1)
+                            }.onAppear(perform: {
+                                self.hourEndurance = Int(UserDefaults.standard.double(forKey: UserDefaultsKeys.lastEndurance) / 3600)
+                            }).layoutPriority(1)
                             Picker(selection: $minuteEndurance, label: Text("Minutes")) {
                                 ForEach(stride(from: 0, to: EnduranceView.maxMinuteEndurance, by: EnduranceView.minutesStep).map({ $0 })) {
                                     Text(String(format: "%02d", $0))
                                 }
-                            }.layoutPriority(1)
+                            }.onAppear(perform: {
+                                self.minuteEndurance = Int(UserDefaults.standard.double(forKey: UserDefaultsKeys.lastEndurance) / 60) % 60
+                            }).layoutPriority(1)
                             Spacer()
                         }.frame(width: nil, height: 80, alignment: .center)
                     }.padding()
@@ -61,8 +65,9 @@ struct EnduranceView : View {
                 }
                 Section {
                     Button(action: {
-                        self.host?.startTime(withBlockOffTime: Date())
-                        }, label: { Text("Block off") }).padding()
+                        let endurance = TimeInterval((self.hourEndurance * 60 + self.minuteEndurance) * 60)
+                        self.host?.startTime(withBlockOffTime: Date(), endurance: endurance)
+                    }, label: { Text("Block off") }).padding()
                 }
             }
             

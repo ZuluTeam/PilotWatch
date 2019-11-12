@@ -11,10 +11,17 @@ import SwiftUI
 struct FlightTimeView: View {
     @State private var nowDate = Date()
     
+    @ObservedObject var timeModel: TimeModel
+    
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
         VStack {
+            HStack(alignment: .top) {
+                Text("Endurance").font(.caption)
+                Spacer()
+                Text("00:00:00").font(.caption)
+            }
             HStack(alignment: .top) {
                 Text("Block off").font(.caption)
                 Spacer()
@@ -29,6 +36,6 @@ struct FlightTimeView: View {
 
 struct FlightTimeView_Previews: PreviewProvider {
     static var previews: some View {
-        FlightTimeView()
+        FlightTimeView(timeModel: TimeModel(blockOffTime: Date(), endurance: 0.0))
     }
 }

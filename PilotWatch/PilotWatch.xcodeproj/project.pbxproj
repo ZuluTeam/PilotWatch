@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50A1EC12375BE3D00D50286 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A1EC02375BE3D00D50286 /* UserDefaultsKeys.swift */; };
+		B50A1EC22375BED000D50286 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A1EC02375BE3D00D50286 /* UserDefaultsKeys.swift */; };
+		B50A1EC4237AEA8700D50286 /* TimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A1EC3237AEA8700D50286 /* TimeRow.swift */; };
 		B5215F1523699B5C00CE55C7 /* FlightTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215F1423699B5C00CE55C7 /* FlightTimeController.swift */; };
 		B5215F1723699EED00CE55C7 /* FlightTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5215F1623699EED00CE55C7 /* FlightTimeView.swift */; };
 		B57079662362005D008A95F6 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57079652362005D008A95F6 /* TimeModel.swift */; };
@@ -17,6 +20,7 @@
 		B570796F23632CDF008A95F6 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570796E23632CDF008A95F6 /* DateManager.swift */; };
 		B570797023632CE0008A95F6 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570796E23632CDF008A95F6 /* DateManager.swift */; };
 		B570797423670D89008A95F6 /* TimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570797323670D89008A95F6 /* TimeController.swift */; };
+		B5C2EAC923759A2A003F9811 /* EnduranceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2EAC823759A2A003F9811 /* EnduranceRow.swift */; };
 		B5DC8A2522F1AC7700F8FB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A2422F1AC7700F8FB12 /* AppDelegate.swift */; };
 		B5DC8A2722F1AC7700F8FB12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC8A2622F1AC7700F8FB12 /* ContentView.swift */; };
 		B5DC8A2922F1AC7900F8FB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DC8A2822F1AC7900F8FB12 /* Assets.xcassets */; };
@@ -95,6 +99,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B50A1EC02375BE3D00D50286 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		B50A1EC3237AEA8700D50286 /* TimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRow.swift; sourceTree = "<group>"; };
 		B5215F1423699B5C00CE55C7 /* FlightTimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTimeController.swift; sourceTree = "<group>"; };
 		B5215F1623699EED00CE55C7 /* FlightTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTimeView.swift; sourceTree = "<group>"; };
 		B57079652362005D008A95F6 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 		B570796B23632C05008A95F6 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 		B570796E23632CDF008A95F6 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		B570797323670D89008A95F6 /* TimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeController.swift; sourceTree = "<group>"; };
+		B5C2EAC823759A2A003F9811 /* EnduranceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnduranceRow.swift; sourceTree = "<group>"; };
 		B5DC8A2122F1AC7700F8FB12 /* PilotWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DC8A2422F1AC7700F8FB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5DC8A2622F1AC7700F8FB12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,6 +177,8 @@
 				B5DC8A5D22F1AC7A00F8FB12 /* EnduranceView.swift */,
 				B5215F1623699EED00CE55C7 /* FlightTimeView.swift */,
 				B570796B23632C05008A95F6 /* TimeView.swift */,
+				B5C2EAC823759A2A003F9811 /* EnduranceRow.swift */,
+				B50A1EC3237AEA8700D50286 /* TimeRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +199,7 @@
 				B57079652362005D008A95F6 /* TimeModel.swift */,
 				B570796823632B80008A95F6 /* IntExtensions.swift */,
 				B570796E23632CDF008A95F6 /* DateManager.swift */,
+				B50A1EC02375BE3D00D50286 /* UserDefaultsKeys.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -488,6 +498,7 @@
 			files = (
 				B5DC8A2722F1AC7700F8FB12 /* ContentView.swift in Sources */,
 				B570796F23632CDF008A95F6 /* DateManager.swift in Sources */,
+				B50A1EC12375BE3D00D50286 /* UserDefaultsKeys.swift in Sources */,
 				B570796923632B80008A95F6 /* IntExtensions.swift in Sources */,
 				B57079662362005D008A95F6 /* TimeModel.swift in Sources */,
 				B5DC8A2522F1AC7700F8FB12 /* AppDelegate.swift in Sources */,
@@ -521,12 +532,15 @@
 				B57079672362005D008A95F6 /* TimeModel.swift in Sources */,
 				B5DC8A6422F1AC7A00F8FB12 /* NotificationController.swift in Sources */,
 				B5215F1523699B5C00CE55C7 /* FlightTimeController.swift in Sources */,
+				B50A1EC22375BED000D50286 /* UserDefaultsKeys.swift in Sources */,
+				B5C2EAC923759A2A003F9811 /* EnduranceRow.swift in Sources */,
 				B5215F1723699EED00CE55C7 /* FlightTimeView.swift in Sources */,
 				B570796D23632C05008A95F6 /* TimeView.swift in Sources */,
 				B5DC8A6222F1AC7A00F8FB12 /* ExtensionDelegate.swift in Sources */,
 				B5DC8A6622F1AC7A00F8FB12 /* NotificationView.swift in Sources */,
 				B5DC8A6822F1AC7A00F8FB12 /* ComplicationController.swift in Sources */,
 				B570797423670D89008A95F6 /* TimeController.swift in Sources */,
+				B50A1EC4237AEA8700D50286 /* TimeRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
