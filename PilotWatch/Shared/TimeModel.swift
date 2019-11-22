@@ -32,8 +32,6 @@ final class TimeModel: ObservableObject {
         }
     }
     
-    
-    
     init(blockOffTime: Date, endurance: TimeInterval) {
         self.blockOffTime = blockOffTime
         self.endurance = endurance
